@@ -9,4 +9,4 @@ for packet in capture:
      field_names = packet.http2._all_fields
      for field_name in field_names:
         http2_stream_id = {val for key, val in field_names.items() if key == 'http2.streamid'}
-        print("".join(http2_stream_id))
+        print("".join(http2_stream_id
